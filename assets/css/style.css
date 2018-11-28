@@ -31,6 +31,10 @@ h1 {
     font-family: Cinzel;
 }
 
+h3 {
+    font-size: 250%;
+}
+
 #ncDiv {
     display: flex;
     flex-direction: column;
@@ -222,7 +226,7 @@ h2 {
     text-align: center;
     font-family: Cinzel;
     color: white;
-    font-size: 6vw;
+    
 }
 
 .portCol {
@@ -276,21 +280,20 @@ h2 {
 }
 
 #taylorProfile {
-    margin-left: 25%;
-    width: 50%;
+    margin-left: 18%;
+    margin-top: 10%;
+    width: 62%;
 }
 
-h3 {
-    text-align: left;
-    font-family: Cinzel;
-    color: white;
-    size: 10vw;
+#about {
+    margin-top: 3%;
 }
 
 #profileabout {
     text-align: left;
     color: white;
     font-family: Cormorant;
+    font-size: 125%;
 }
 
 #footer {
@@ -352,6 +355,7 @@ h3 {
         font-size: 2vw;
         max-width: 24vw
     }
+
   }
 
   @media screen and (max-width: 600px) {
@@ -370,4 +374,9 @@ h3 {
     #paw {
         display: none;
     }
+
+    #taylorProfile {
+        margin-top: 0%;
+    }
+
   }
