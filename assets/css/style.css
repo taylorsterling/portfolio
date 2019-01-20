@@ -217,10 +217,6 @@ a:link {text-decoration: none; color: white;}
     background: rgb(1, 1, 31);
 }
 
-#swords {
-    width: 100%;
-}
-
 h2 {
     
     text-align: center;
@@ -229,53 +225,25 @@ h2 {
     
 }
 
-.portCol {
-    align-items: center;
-    justify-content: center;
-    border-color: transparent;
-    border-style: none;
-}
-
-.modalBtn {
-    
-    align-items: center;
-    justify-content: center;
-    margin-top: 3%;
-    font-family: Cormorant;
-    color: white;
-    font-size: 4vw;
-    border: none;
-}
-
-.modalBtn:hover {
-    background: gray}
-
-.close {
-
-    width: 10%;
-    margin-left: 33vw;
-    margin-bottom: 0;
-}
-
-.modal-content {
-    font-family: Cormorant;
-    color: white;
-    font-size: 150%;
-    background-color: rgb(71, 71, 71);
-    border-style: solid;
-    border-color: aqua;
-    text-align: center;
-    border-width: 2px;
-
-}
-
-.modal-body {
+#portfolio {
+    margin-top: 5%;
     margin-bottom: 5%;
 }
 
+.card {
+    margin: 0 auto;
+    float: none; 
+    margin-bottom: 10px; 
+    background: transparent;
+    border-width: 2px;
+    color: white;
+    margin-top: 5%;
+    height: 558px;
+}
 
-.modalBtnR:hover{
-    background-color: rgb(3, 5, 119);
+.card-title {
+    font-family: Cormorant;
+    font-size: 200%;
 }
 
 #taylorProfile {
