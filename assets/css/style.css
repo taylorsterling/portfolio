@@ -225,6 +225,12 @@ h2 {
     
 }
 
+h5 {
+font-family: Cinzel;
+    color: white;
+	
+}
+
 #portfolio {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -264,7 +270,7 @@ h2 {
 }
 
 .progress-bar {
-	margin-bottom: 3%;
+	margin: 5%;
 }
 
 .progress1 {
@@ -275,7 +281,7 @@ h2 {
 	background-color: rgb(2, 1, 14);
 }
 
-.progress3 {
+.progress-bar-striped {
 	background-color: fuschia;
 }
 
