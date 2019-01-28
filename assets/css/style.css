@@ -273,7 +273,17 @@ font-family: Cinzel;
 	margin: 5%;
 }
 
+.progress1 {
+	background-color: none;
+}
 
+.progress2 {
+	background-color: none;
+}
+
+.progress3 {
+	background-color: none;
+}
 
 #footer {
     width: 100%;
