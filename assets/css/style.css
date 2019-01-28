@@ -269,6 +269,10 @@ font-family: Cinzel;
     font-size: 125%;
 }
 
+.prog {
+	align-contents: center;
+}
+
  .progress-bar {
 	margin: 5%;
 }
