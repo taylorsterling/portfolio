@@ -269,11 +269,11 @@ font-family: Cinzel;
     font-size: 125%;
 }
 
-.progress-bar {
+ .progress-bar {
 	margin: 5%;
 }
 
-.progress1 {
+/*.progress1 {
 	background-color: aqua;
 }
 
@@ -284,7 +284,7 @@ font-family: Cinzel;
 .progress3 {
 	background-color: fuschia;
 }
-
+*/
 #footer {
     width: 100%;
     height: 27vh;
