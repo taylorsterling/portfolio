@@ -271,7 +271,8 @@ font-family: Cinzel;
 
 .prog {
 	align-contents: center;
-	margin-left: 18%
+	margin-left: 20;
+	margin-bottom: 5%;
 }
 
  .progress-bar {
