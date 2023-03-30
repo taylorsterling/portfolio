@@ -66,5 +66,27 @@ $(document).ready(function () {
           }
     });
 
-});
+    $(".knocksequence").hide();
 
+    $('.doorbtn').click(function () {
+
+        if ($('.doorbtn').hasClass('whothere')){
+            $(".doorbtn").text("Wah Who?");
+            $(".knocksequence").text("Wah");
+            $(".doorbtn").addClass('wahwho');
+            $('.doorbtn').removeClass('whothere');
+        
+        } else if( $('.doorbtn').hasClass('wahwho')) {
+            $(".doorbtn").hide();
+            $(".knocksequence").text("Wow, you seem really excited to hire me!");
+        }
+        else{
+            $(".knock").hide();
+            $(".knocksequence").show();
+            $(".doorbtn").text("Who's There?");
+            $('.doorbtn').addClass('whothere');
+        }
+    });
+
+
+});
