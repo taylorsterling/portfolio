@@ -77,7 +77,7 @@ $(document).ready(function () {
             $('.doorbtn').removeClass('whothere');
         
         } else if( $('.doorbtn').hasClass('wahwho')) {
-            $(".doorbtn").hide();
+            $(".doorbtn").text("Wahoo!");
             $(".knocksequence").text("Wow, you seem really excited to hire me!");
         }
         else{
