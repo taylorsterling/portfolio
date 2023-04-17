@@ -248,7 +248,7 @@ font-family: Cinzel;
 }
 
 .card-title {
-    font-family: Cormorant;
+    font-family: Poppins;
     font-size: 200%;
 }
 
@@ -265,7 +265,7 @@ font-family: Cinzel;
 #profileabout {
     text-align: left;
     color: white;
-    font-family: Cormorant;
+    font-family: Poppins;
     font-size: 125%;
 }
 
@@ -368,7 +368,7 @@ font-family: Cinzel;
     -webkit-box-shadow: 0px 1px 3px #66666671;
     -moz-box-shadow: 0px 1px 3px #66666671;
     box-shadow: 0px 1px 3px #66666671;
-    font-family: Cormorant;
+    font-family: Poppins;
     color: white;
     margin: 0;
     position: absolute;
