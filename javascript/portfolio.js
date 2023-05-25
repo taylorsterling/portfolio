@@ -59,34 +59,86 @@ $(document).ready(function () {
 
     $('#paw').click(function () {
 
-        if ($('#site').hasClass('cursorCat')){
+        if ($('#site').hasClass('cursorCat')) {
             $('#site').removeClass('cursorCat');
         } else {
             $('#site').addClass('cursorCat');
-          }
+        }
     });
 
     $(".knocksequence").hide();
 
-    $('.doorbtn').click(function () {
 
-        if ($('.doorbtn').hasClass('whothere')){
-            $(".doorbtn").text("Wah Who?");
+
+
+
+    $('.knock-btn').click(function () {
+
+        if ($('.knock-btn').hasClass('whothere')) {
+            $(".knock-btn").attr("src", "./assets/images/wahwho.png");
             $(".knocksequence").text("Wah");
-            $(".doorbtn").addClass('wahwho');
-            $('.doorbtn').removeClass('whothere');
-        
-        } else if( $('.doorbtn').hasClass('wahwho')) {
-            $(".doorbtn").text("Wahoo!");
+            $(".knock-btn").addClass('wahwho');
+            $('.knock-btn').removeClass('whothere');
+
+        } else if ($('.knock-btn').hasClass('wahwho')) {
+            $(".knock-btn").attr("src", "./assets/images/wahoo.png");
+            $(".knock-btn").addClass('link');
             $(".knocksequence").text("Wow, you seem really excited to hire me!");
+            if ($('.knock-btn').hasClass('link')) {
+                $('.knock-btn').click(function () {
+                    window.location = 'https://www.linkedin.com/in/taylor-sterling-668894114/';
+                });
+            }
         }
-        else{
+        else {
             $(".knock").hide();
             $(".knocksequence").show();
-            $(".doorbtn").text("Who's There?");
-            $('.doorbtn').addClass('whothere');
+            $(".knock-btn").attr("src", "./assets/images/whosthere.png");
+            $('.knock-btn').addClass('whothere');
         }
     });
 
+
+
+
+
+    // $('.knock-btn').click(function () {
+
+    //     if ($('.knock-btn').hasClass('whothere')) {
+    //         $(".buttonhtml").text("Wah Who?");
+    //         $(".knocksequence").text("Wah");
+    //         $(".knock-btn").addClass('wahwho');
+    //         $('.knock-btn').removeClass('whothere');
+
+    //     } else if ($('.knock-btn').hasClass('wahwho')) {
+    //         $(".buttonhtml").text("Wahoo!");
+    //         $(".buttonhtml").append("<a href='https://www.linkedin.com/in/taylor-sterling-668894114/'><br>Click Here to Contact Me!</a>")
+    //         $(".knocksequence").text("Wow, you seem really excited to hire me!");
+    //     }
+    //     else {
+    //         $(".knock").hide();
+    //         $(".knocksequence").show();
+    //         $(".buttonhtml").text("Who's There?");
+    //         $('.knock-btn').addClass('whothere');
+    //     }
+    // });
+
+    $(".knock-btn").on("mousedown", function () {
+        $(this).attr("src", "assets/images/pushed.png");
+    });
+
+    $(".knock-btn").on("mouseup", function () {
+        $(this).attr("src", "assets/images/notpushed.png");
+    });
+
+
+    // $(".knock-btn").hover( 
+    //     function() {
+    //         $(this).attr("src", "assets/images/pushed.png");
+    //     },
+    //     function() {
+    //         $(this).attr("src", "assets/images/notpushed.png");
+    //     }    
+    // );
 
 });

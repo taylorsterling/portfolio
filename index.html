@@ -11,17 +11,12 @@
     <!-- Tab Image -->
     <link rel="icon" href="assets/images/t.png">
 
-    <!-- Linking jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 
     <!-- Linking Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!-- Linking Bootstrap Javascript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
 
     <!-- Linking in Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -29,8 +24,8 @@
     <!-- Google Font: "Cinzel" -->
     <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
 
-    <!-- Google Font: "Dancing Script"-->
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <!-- Google Font: "Koulen"-->
+    <link href="https://fonts.googleapis.com/css?family=Koulen" rel="stylesheet">
 
     <!-- Google Font: "Cormorant"-->
     <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
@@ -41,35 +36,26 @@
     <!-- Google Font: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
-    <!-- Linking in JavaScript -->
-    <script src="javascript/portfolio.js"></script>
+    <!-- Google Font: Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
 
 </head>
 
 <body id="site">
-    <div class="container-fluid">
-        <div class="row" id="banner">
 
-            <div class="col-sm-12 animatedBanner" id="ncDiv">
+    <div class="videowrap" id="videowrap">
 
-                <div id="nameCard">
-
-                    <h1>Taylor Sterling</h1>
-
-                    <p id="tag">a fresh mindset in coding & design</p>
-
-                    <br>
-
-                    <button class="btn btn-primary" id="forwardBtn" type="submit">
-                        See What I Can Do!
-                        <br>
-                        <img id="arrowspng" src="assets/images/arrows.png" width="44%" class="arrowBtn"
-                            alt="Progress Arrows">
-                    </button>
-
-                </div>
+        <div class="row">
+            <div class="col-sm-12 introduction">
+                <img class="signature" src="assets/images/signature.png" alt="Taylor Sterling signature">
+                <p id="tag">a fresh mindset in coding & design</p>
             </div>
         </div>
+
+        <video id="video" class="video video-background" preload muted autoplay loop>
+            <source src="assets/images/cover.mov" type="video/mp4">
+        </video>
+
     </div>
 
     <nav id="navBar" class="navbar navbar-expand-lg">
@@ -82,12 +68,12 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#banner" id="home">Home
+                    <a class="nav-link" href="#videowrap" id="home">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#portfolio">Portfolio
+                    <a class="nav-link" href="#skills">Skill Set
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
@@ -103,125 +89,114 @@
             onmouseout="this.src='assets/images/paw.png'">
     </nav>
 
-    <!-- Portfolio -->
+    <!-- About me -->
 
-    <div class="container-fluid" class="portfolio">
+    <div class="container-fluid" id="about">
 
         <div class="row">
-            <div class="col-sm-4">
 
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="./assets/images/swords.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">JQuery</h5>
-                        <p class="card-text">In this, "Dragon Ball,"- themed game, I used JQuery to create an RPG
-                            interface.</p>
-                    </div>
-
-                    <div class="card-body">
-                        <a href="https://taylorsterling.github.io/week-4-game/" class="card-link">Click here to
-                            play!</a>
-                    </div>
-                </div>
-
+            <div class="col-sm-6 px-5" id="profile">
+                <img class="img-fluid" id="taylorProfile" src="assets/images/profile.png">
             </div>
 
-            <div class="col-sm-4">
-
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="./assets/images/blog.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Angular</h5>
-                        <p class="card-text">My personal blog with my own domain name hosted by Heroku, and built with
-                            Angular.
-                            (Blog currently under construction, please check back soon!)</p>
-                    </div>
-
-                    <div class="card-body">
-                        <a href="http://www.pepperfig.com/" class="card-link">To My Blog!</a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-sm-4">
-
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="./assets/images/burger.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">JavaScript</h5>
-                        <p class="card-text">Using its core elements, I created this, "Bob's Burgers,"- themed hangman
-                            game with JavaScript.</p>
-                    </div>
-
-                    <div class="card-body">
-                        <a href="https://taylorsterling.github.io/Hangman-Game/" class="card-link">Let's play!</a>
-                    </div>
-                </div>
-
+            <div class="col-sm-6" id="profileabout">
+                <h4>About Me</h4>
+                <p id="aboutMe">
+                    <br> Hello!
+                    <br>
+                    <br>
+                    <br>In 2013, I moved from Syracuse, NY to Houston, TX. Here I earned a Business Degree and
+                    began doing clerical work and customer service. Since then, I have attended the Coding Bootcamp
+                    through the University of Texas.
+                    <br>
+                    <br>
+                    From Bootcamp I not only learned the basic fundamentals of code,
+                    but I
+                    discovered new- found skills and passions in graphics, logic, technology, and teamwork.
+                    <br>
+                    <br>
+                    I'm a mom of 2, and when I have spare time I love gaming, painting, and working on webdev
+                    projects.
+                    <br>
+                </p>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-4">
+    <!-- Portfolio -->
 
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="./assets/images/multi.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Firebase</h5>
-                        <p class="card-text">I had a lot of fun coding this multiplayer rock paper scissors game. I did
-                            it with Firebase, and it works best with two players on separate browsers.</p>
-                    </div>
+    <div class="container-fluid portfolio my-5 py-1" id="skills">
+        <div class="wrap">
+            <h2 class="">Skill Sets</h2>
 
-                    <div class="card-body">
-                        <a href="https://taylorsterling.github.io/RPS-Multiplayer/" class="card-link">Grab a friend and
-                            go!</a>
-                    </div>
+            <div class="row">
+                <div class="col-sm-6 leftport">
+                    <h3 class="floatright"><i id="html5" class="fa-brands fa-html5 fa-5x html5"
+                            style="color: #00ffff;"></i>&nbsp;&nbsp; HTML</h3>
                 </div>
+                <div class="col-sm-6">
 
+                </div>
             </div>
 
-            <div class="col-sm-4">
+            <div class="row">
+                <div class="col-sm-6">
 
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="./assets/images/WolfGIF.gif" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">API</h5>
-                        <p class="card-text">Here you'll find that I've made appropriate API calls to create a simple
-                            search interface to find GIFs from Giphy.</p>
-                    </div>
-
-                    <div class="card-body">
-                        <a href="https://taylorsterling.github.io/fun-with-api/" class="card-link">Giphy it up!</a>
-                    </div>
                 </div>
+                <div class="col-sm-6 rightport">
 
+                    <h3 class="floatleft">CSS&nbsp;&nbsp; <i id="css" class="fa-brands fa-css3-alt fa-5x"
+                            style="color: #00ffff;"></i>
+                    </h3>
+                </div>
             </div>
 
-            <div class="col-sm-4">
-
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="./assets/images/node.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Node & MySQL</h5>
-                        <p class="card-text">In this back-end app, I created a mock of an online storefront with
-                            Node.js and MySQL.</p>
-                    </div>
-
-                    <div class="card-body">
-                        <a href="https://taylorsterling.github.io/nodemysql/" class="card-link">Take a Look!</a>
-                    </div>
+            <div class="row">
+                <div class="col-sm-6 leftport">
+                    <h3 class="floatright"><i id="javascript" class="fa-brands fa-square-js fa-5x"
+                            style="color: #00ffff;"></i> &nbsp;&nbsp;JavaScript</h3>
                 </div>
+                <div class="col-sm-6">
 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+
+                </div>
+                <div class="col-sm-6 rightport">
+                    <h3 class="floatleft">Node.js&nbsp;&nbsp; <i id="node" class="fa-brands fa-node-js fa-5x"
+                            style="color: #00ffff;"></i></h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 leftport">
+                    <h3 class="floatright"><i id="angular" class="fa-brands fa-angular fa-5x"
+                            style="color: #00ffff;"></i>&nbsp;&nbsp; Angular</h3>
+                </div>
+                <div class="col-sm-6">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+
+                </div>
+                <div class="col-sm-6 rightport">
+                    <h3 class="floatleft">React&nbsp;&nbsp; <i id="react" class="fa-brands fa-react fa-5x"
+                            style="color: #00ffff;"></i>
+                    </h3>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Knock Knock -->
 
-    <div class="container-fluid" class="joke">
+    <div class="container-fluid joke py-2">
 
         <div class="row">
 
@@ -240,41 +215,8 @@
                 <div class="knocksequence">Knock Knock!</div>
             </div>
 
-            <div class="col-sm-4 jokebtn">
-                <button type="button" class="doorbtn btn btn-secondary">
-                    Push to Answer!
-                </button>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- About me -->
-
-    <div class="container-fluid" id="about">
-
-        <div class="row">
-
-            <div class="col-sm-6" id="profile">
-                <img id="taylorProfile" src="assets/images/profile.png">
-            </div>
-
-            <div class="col-sm-6" id="profileabout">
-                <h3>About Me</h3>
-                <p id="aboutMe">
-                    <br> Hello!
-                    <br>
-                    <br>In 2013, I moved from Syracuse, NY to Houston, TX. Here I earned a Business Degree and
-                    began doing clerical work and customer service.
-                    <br>Since then, I have attended the Coding Bootcamp through the University of Texas.
-                    <br>
-                    From Bootcamp I not only learned the basic fundamentals of code,
-                    but I
-                    discovered new- found skills and passions in graphics, logic, technology, and teamwork.
-                    <br>
-                    I'm a mom of 2, and when I have spare time I love gaming, painting, and working on webdev projects.
-                    <br>
-                </p>
+            <div class="col-sm-4 img-fluid d-flex align-items-center justify-content-center">
+                <img class="knock-btn" src="assets/images/pushtoanswer.png">
             </div>
         </div>
     </div>
@@ -316,7 +258,18 @@
         <p id="copyright">Taylor Sterling ©2023</p>
 
     </footer>
+    <!-- Linking jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
+    <!-- Linking Bootstrap Javascript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Linking in JavaScript -->
+    <script src="javascript/portfolio.js"></script>
+
+    <script src="https://kit.fontawesome.com/eb60e8e3f7.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
