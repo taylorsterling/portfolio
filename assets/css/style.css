@@ -223,7 +223,7 @@ h3 {
 .example {
     color: white;
     font-family: poppins;
-    font-size: 34%;
+    font-size: 1rem;
 }
 
 .fa-5x {
@@ -506,6 +506,34 @@ h3 {
         display: none;
     }
 
+    .signature {
+        width: 75%;
+    }
+
+    #tag {
+        width: 80%;
+    }
+
+    .example {
+        font-size: 0.75rem;
+    }
+    
+    .fa-5x {
+        font-size: 6rem!important;    
+    }
+
+    #profile {
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    h2 {
+        width: 45%;
+        margin-bottom: 5%;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
 
     .knockingtext {
         rotate: 0deg;
