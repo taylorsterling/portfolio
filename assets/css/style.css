@@ -216,6 +216,15 @@ h3 {
     padding-right: 5%;
 }
 
+.examplelink:hover {
+    cursor: pointer;
+}
+
+.example {
+    color: white;
+    font-family: poppins;
+    font-size: 34%;
+}
 
 .fa-5x {
     font-size: 7.5rem!important;
@@ -279,6 +288,8 @@ h3 {
   #angular:hover{
     color: rgb(255, 0, 191)!important;
     animation: bounce 2s ease infinite;
+    cursor: pointer;
+
   }
   @keyframes bounce {
       0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
@@ -289,6 +300,8 @@ h3 {
   #react:hover{
     color: rgb(255, 0, 191)!important;
     animation: bounce 2s ease infinite;
+    cursor: pointer;
+
   }
   @keyframes bounce {
       0%, 20%, 50%, 80%, 100% {transform: translateY(0);}

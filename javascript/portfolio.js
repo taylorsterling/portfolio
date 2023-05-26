@@ -69,6 +69,14 @@ $(document).ready(function () {
     $(".knocksequence").hide();
 
 
+    $('#angular').click(function() {
+        window.location = 'http://www.pepperfig.com/home'
+    });
+
+    $('#react').click(function() {
+        window.location = 'https://www.12coffees.com/'
+    });
+
 
 
 
@@ -98,31 +106,6 @@ $(document).ready(function () {
         }
     });
 
-
-
-
-
-    // $('.knock-btn').click(function () {
-
-    //     if ($('.knock-btn').hasClass('whothere')) {
-    //         $(".buttonhtml").text("Wah Who?");
-    //         $(".knocksequence").text("Wah");
-    //         $(".knock-btn").addClass('wahwho');
-    //         $('.knock-btn').removeClass('whothere');
-
-    //     } else if ($('.knock-btn').hasClass('wahwho')) {
-    //         $(".buttonhtml").text("Wahoo!");
-    //         $(".buttonhtml").append("<a href='https://www.linkedin.com/in/taylor-sterling-668894114/'><br>Click Here to Contact Me!</a>")
-    //         $(".knocksequence").text("Wow, you seem really excited to hire me!");
-    //     }
-    //     else {
-    //         $(".knock").hide();
-    //         $(".knocksequence").show();
-    //         $(".buttonhtml").text("Who's There?");
-    //         $('.knock-btn').addClass('whothere');
-    //     }
-    // });
-
     $(".knock-btn").on("mousedown", function () {
         $(this).attr("src", "assets/images/pushed.png");
     });
@@ -130,15 +113,5 @@ $(document).ready(function () {
     $(".knock-btn").on("mouseup", function () {
         $(this).attr("src", "assets/images/notpushed.png");
     });
-
-
-    // $(".knock-btn").hover( 
-    //     function() {
-    //         $(this).attr("src", "assets/images/pushed.png");
-    //     },
-    //     function() {
-    //         $(this).attr("src", "assets/images/notpushed.png");
-    //     }    
-    // );
 
 });
