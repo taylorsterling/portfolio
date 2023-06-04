@@ -156,6 +156,11 @@ a:link {text-decoration: none; color: white;}
 
 }
 
+table {
+    text-align: left;
+    padding: 10%;
+}
+
 .hide {
     display: none;
 }
@@ -549,7 +554,31 @@ h3 {
       color: white;
       font-family: Poppins;
     font-size: 125%;
-    text-align: center;
+    align-self: center;
+ 
+   
+  }
+
+  .proficiencies {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .atable {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   
+  }
+
+  .tdleft {
+    width: 40%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+  }
+
+  .tdright {
+      width: 60%;
   }
 
     h4 {
@@ -562,7 +591,6 @@ h3 {
         text-align: center;
         margin: auto;
         float: none;
-        padding-left: 7%;
       }
 
     h1 {
