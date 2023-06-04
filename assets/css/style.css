@@ -545,6 +545,13 @@ h3 {
 
   }
 
+  .additional {
+      color: white;
+      font-family: Poppins;
+    font-size: 125%;
+    text-align: center;
+  }
+
     h4 {
     text-align: center;
     }
@@ -555,6 +562,7 @@ h3 {
         text-align: center;
         margin: auto;
         float: none;
+        padding-left: 7%;
       }
 
     h1 {
