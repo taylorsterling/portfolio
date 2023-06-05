@@ -504,7 +504,7 @@ h3 {
     }
 
     .videowrap {
-        background-image: url('../images/covermobile.png');
+        background-image: url('../images/covermobile.jpg');
         background-size: cover;
         z-index: 1;
         overflow: hidden;
