@@ -29,6 +29,9 @@ h3 {
     margin: 0 auto;
     text-align: center;
     align-items: center;
+    background-image: url("../images/covermobile.png");
+    background-size: cover;
+    overflow: hidden;
 }
   
   .video-background { 
