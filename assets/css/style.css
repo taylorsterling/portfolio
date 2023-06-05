@@ -8,27 +8,12 @@ html, body {
     display: none;
 }
 
-#banner {
-    font-family: Cinzel;
-    height: 100vh;
-    background: rgb(27, 27, 27);
-    background-size: cover;
-    background-position: fixed;
-    background-repeat: no-repeat;
-    
-}
 
 .btn-primary {
     background-color: transparent;
     border-color: white;
     color: white;
     font-family: Cinzel;
-}
-
-.banner {
-    margin: auto;
-    align-content: center;
-    text-align: center;
 }
 
 h3 {
@@ -40,6 +25,10 @@ h3 {
     overflow: hidden;
     display: flex;
     height: 100vh;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
 }
   
   .video-background { 
@@ -49,6 +38,7 @@ width: 100%;
 position: absolute;
 top: 0;
 left: 0;
+z-index: 0;
 
   }
 
@@ -61,7 +51,7 @@ left: 0;
     border-top-color: white;
     font-family: 'Raleway', sans-serif;
     padding-top: 2%;
-    width: 40%;
+    width: 60%;
     margin: auto;
     font-size: 30%;
 
@@ -176,6 +166,18 @@ h2 {
     text-align: center;
     align-content: center;
 
+}
+
+.h2 {
+    color: white;
+    font-size: 5rem;
+    border-bottom: solid;
+    border-bottom-width: 3px;
+    font-family: Koulen;
+    width: 30%;
+    margin: 0 auto 3% auto;
+    text-align: center;
+    align-content: center;
 }
 
 h4 {
@@ -514,6 +516,12 @@ h3 {
         font-size: 2.75rem;
     }
 
+    .h2 {
+        width: 50%;
+        margin-bottom: 5%;
+        font-size: 2rem;
+    }
+
     h3 {
         font-size: 2rem;
     }
@@ -585,12 +593,12 @@ h3 {
     text-align: center;
     }
 
-    .introduction {
+    .introwrap {
         z-index: 1;
-        align-content: center;
-        text-align: center;
-        margin: auto;
-        float: none;
+    }
+
+    .introduction {
+        z-index: 2;
       }
 
     h1 {
