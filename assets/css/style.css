@@ -60,9 +60,13 @@ z-index: 0;
     padding-top: 2%;
     width: 60%;
     margin: auto;
-    font-size: 30%;
+    font-size: 3vw;
 
 }
+
+  h1 {
+      font-size: 5vw;
+  }
 
 a:link {text-decoration: none; color: white;}
 
@@ -474,7 +478,7 @@ h3 {
 
   /* Media Query for Mobile Devices */
 
-@media screen and (min-width: 601px) {
+/* @media screen and (min-width: 601px) {
     #tag {
       font-size: 3vw;
     }
@@ -483,9 +487,9 @@ h3 {
         font-size: 5vw;
     }
 
-  }
+  } */
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     #tag {
       font-size: 6.5vw;
       width: 80%;
@@ -503,6 +507,7 @@ h3 {
         background-image: url('../images/covermobile.png');
         background-size: cover;
         z-index: 1;
+        overflow: hidden;
     }
 
     .example {
