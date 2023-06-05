@@ -493,6 +493,16 @@ h3 {
         display: none;
     }
 
+    #video {
+        display: none;
+    }
+
+    .videowrap {
+        background-image: url("../images/covermobile.png");
+        background-size: cover;
+        overflow: hidden;
+    }
+
     .example {
         font-size: 0.75rem;
     }
