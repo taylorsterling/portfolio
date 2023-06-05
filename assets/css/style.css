@@ -29,9 +29,8 @@ h3 {
     margin: 0 auto;
     text-align: center;
     align-items: center;
-    background-image: url("../images/covermobile.png");
+    background-image: url('../images/covermobile.png');
     background-size: cover;
-    overflow: hidden;
 }
   
   .video-background { 
@@ -501,9 +500,9 @@ h3 {
     }
 
     .videowrap {
-        background-image: url("../images/covermobile.png");
+        background-image: url('../images/covermobile.png');
         background-size: cover;
-        overflow: hidden;
+        z-index: 1;
     }
 
     .example {
