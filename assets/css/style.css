@@ -321,6 +321,17 @@ h3 {
     margin-top: 3%;
 }
 
+.inprogress {
+    color: white;
+    font-family: Poppins;
+    text-align: left;
+    font-size: 125%;
+}
+
+.progress {
+    background-color: aqua;
+}
+
 #profileabout {
     text-align: left;
     color: white;
@@ -585,14 +596,18 @@ h3 {
       font-family: Poppins;
     font-size: 125%;
     align-self: center;
- 
    
+  }
+
+  .newskills {
+    margin-left: 5%;
   }
 
   .proficiencies {
     padding-top: 5%;
     padding-bottom: 5%;
   }
+
 
   .atable {
    display: flex;
