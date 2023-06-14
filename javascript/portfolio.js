@@ -69,6 +69,137 @@ $(document).ready(function () {
     $(".knocksequence").hide();
 
 
+
+
+
+
+
+
+
+
+    $("#html5").on("mouseenter", function() {
+        $("#html5").addClass("hoverbounce");
+    });
+
+    $("#html5").on("mouseleave", function() {
+        $("#html5").removeClass("hoverbounce");
+    });
+
+    $(".hoverhtml").on("mouseenter", function() {
+        $("#html5").addClass("hoverbounce");
+    });
+
+    $(".hoverhtml").on("mouseleave", function() {
+        $("#html5").removeClass("hoverbounce");
+    });
+
+    
+
+    
+    $("#css").on("mouseenter", function() {
+        $("#css").addClass("hoverbounce");
+    });
+
+    $("#css").on("mouseleave", function() {
+        $("#css").removeClass("hoverbounce");
+    });
+
+    $(".csshover").on("mouseenter", function() {
+        $("#css").addClass("hoverbounce");
+    });
+
+    $(".csshover").on("mouseleave", function() {
+        $("#css").removeClass("hoverbounce");
+    });
+
+
+
+
+    
+    $("#javascript").on("mouseenter", function() {
+        $("#javascript").addClass("hoverbounce");
+    });
+
+    $("#javascript").on("mouseleave", function() {
+        $("#javascript").removeClass("hoverbounce");
+    });
+
+    $(".hoverjavascript").on("mouseenter", function() {
+        $("#javascript").addClass("hoverbounce");
+    });
+
+    $(".hoverjavascript").on("mouseleave", function() {
+        $("#javascript").removeClass("hoverbounce");
+    });
+
+
+
+    
+    $("#node").on("mouseenter", function() {
+        $("#node").addClass("hoverbounce");
+    });
+
+    $("#node").on("mouseleave", function() {
+        $("#node").removeClass("hoverbounce");
+    });
+
+    $(".hovernode").on("mouseenter", function() {
+        $("#node").addClass("hoverbounce");
+    });
+
+    $(".hovernode").on("mouseleave", function() {
+        $("#node").removeClass("hoverbounce");
+    });
+
+
+
+    
+    $("#angular").on("mouseenter", function() {
+        $("#angular").addClass("hoverbounce");
+    });
+
+    $("#angular").on("mouseleave", function() {
+        $("#angular").removeClass("hoverbounce");
+    });
+
+    $(".hoverangular").on("mouseenter", function() {
+        $("#angular").addClass("hoverbounce");
+    });
+
+    $(".hoverangular").on("mouseleave", function() {
+        $("#angular").removeClass("hoverbounce");
+    });
+
+
+
+    
+    $("#react").on("mouseenter", function() {
+        $("#react").addClass("hoverbounce");
+    });
+
+    $("#react").on("mouseleave", function() {
+        $("#react").removeClass("hoverbounce");
+    });
+
+    $(".hoverreact").on("mouseenter", function() {
+        $("#react").addClass("hoverbounce");
+    });
+
+    $(".hoverreact").on("mouseleave", function() {
+        $("#react").removeClass("hoverbounce");
+    });
+
+
+
+
+
+
+
+
+
+
+
+
     $('#angular').click(function() {
         window.location = 'http://www.pepperfig.com/home'
     });
