@@ -204,7 +204,14 @@ $(document).ready(function () {
         window.location = 'http://www.pepperfig.com/home'
     });
 
+    $('.hoverangular').click(function() {
+        window.location = 'http://www.pepperfig.com/home'
+    });
+
     $('#react').click(function() {
+        window.location = 'https://www.12coffees.com/'
+    });
+    $('.hoverreact').click(function() {
         window.location = 'https://www.12coffees.com/'
     });
 
